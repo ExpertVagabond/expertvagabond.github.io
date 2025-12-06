@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>OTT Streaming Platform | Matthew Karsten</title>
+        <meta name="description" content="Full-stack OTT streaming platform with HLS adaptive bitrate, Go microservices, and Netflix-style architecture" />
+
+        <!-- Open Graph and Twitter Cards -->
+        <meta property="og:title" content="OTT Streaming Platform | Matthew Karsten"/>
+        <meta property="og:image" content="https://expertvagabond.github.io/images/portfolio-ott.jpg"/>
+        <meta property="og:url" content="https://expertvagabond.github.io/ott-platform.html"/>
+        <meta property="og:description" content="Production-ready OTT streaming platform with HLS transcoding, adaptive bitrate, and microservices architecture."/>
+        <meta property="og:type" content="article"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:image" content="https://expertvagabond.github.io/images/portfolio-ott.jpg"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+        <style>
+            .tech-badge {
+                display: inline-block;
+                padding: 5px 12px;
+                margin: 3px;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: #fff;
+                border-radius: 20px;
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .feature-card {
+                background: #f8f9fa;
+                padding: 25px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                border-left: 4px solid #667eea;
+            }
+            .metric-box {
+                text-align: center;
+                padding: 20px;
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                border-radius: 10px;
+                color: #fff;
+                margin-bottom: 15px;
+            }
+            .metric-box h3 {
+                font-size: 36px;
+                margin-bottom: 5px;
+                background: linear-gradient(135deg, #00d9ff, #9945ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .architecture-diagram {
+                background: #1a1a2e;
+                padding: 30px;
+                border-radius: 10px;
+                color: #fff;
+                font-family: 'Monaco', 'Menlo', monospace;
+                font-size: 12px;
+                overflow-x: auto;
+            }
+            .code-block {
+                background: #1e1e1e;
+                color: #d4d4d4;
+                padding: 20px;
+                border-radius: 8px;
+                font-family: 'Monaco', 'Menlo', monospace;
+                font-size: 13px;
+                overflow-x: auto;
+            }
+            .code-block .keyword { color: #569cd6; }
+            .code-block .string { color: #ce9178; }
+            .code-block .comment { color: #6a9955; }
+        </style>
+    </head>
+
+    <body>
+        <div class="fh5co-loader"></div>
+
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="container-wrap">
+                    <div class="top-menu">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <div id="fh5co-logo"><a href="index.html">MK</a></div>
+                            </div>
+                            <div class="col-xs-10 text-right menu-1">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.html#fh5co-work">Work</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="https://github.com/ExpertVagabond" target="_blank">GitHub</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="fh5co-work-section" style="padding: 80px 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center animate-box">
+                            <h1 style="font-size: 42px; margin-bottom: 20px;">OTT Streaming Platform</h1>
+                            <p style="font-size: 18px; color: #666;">Full-stack video streaming platform with Netflix-style architecture, HLS adaptive bitrate, and Go microservices</p>
+                            <div style="margin-top: 20px;">
+                                <span class="tech-badge">Go</span>
+                                <span class="tech-badge">Fiber</span>
+                                <span class="tech-badge">FFmpeg</span>
+                                <span class="tech-badge">HLS</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">Redis</span>
+                                <span class="tech-badge">MinIO</span>
+                                <span class="tech-badge">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metrics -->
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="col-md-3 col-sm-6 animate-box">
+                            <div class="metric-box">
+                                <h3>8+</h3>
+                                <p>Videos Transcoded</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 animate-box">
+                            <div class="metric-box">
+                                <h3>4</h3>
+                                <p>Quality Levels</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 animate-box">
+                            <div class="metric-box">
+                                <h3>6</h3>
+                                <p>Microservices</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 animate-box">
+                            <div class="metric-box">
+                                <h3>78MB</h3>
+                                <p>HLS Content</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Overview -->
+                    <div class="row" style="margin-top: 60px;">
+                        <div class="col-md-12 animate-box">
+                            <h2>Project Overview</h2>
+                            <p style="font-size: 16px; line-height: 1.8;">
+                                Built a production-ready Over-The-Top (OTT) streaming platform from scratch, featuring Netflix-style architecture with adaptive bitrate streaming. The platform handles video upload, transcoding to multiple resolutions (1080p, 720p, 480p, 360p), and serves content via HLS (HTTP Live Streaming) for seamless playback across devices.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Architecture -->
+                    <div class="row" style="margin-top: 40px;">
+                        <div class="col-md-12 animate-box">
+                            <h2>System Architecture</h2>
+                            <div class="architecture-diagram">
+<pre>
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              OTT Platform Architecture                        │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                               │
+│  ┌──────────┐     ┌──────────────┐     ┌──────────────┐     ┌─────────────┐ │
+│  │  Client  │────▶│  API Gateway │────▶│ Media Service│────▶│   MinIO     │ │
+│  │ (Player) │     │   (Go/Fiber) │     │  (Go/FFmpeg) │     │  (Storage)  │ │
+│  └──────────┘     └──────────────┘     └──────────────┘     └─────────────┘ │
+│       │                  │                    │                     │        │
+│       │                  ▼                    ▼                     │        │
+│       │           ┌──────────────┐     ┌──────────────┐            │        │
+│       │           │  PostgreSQL  │     │    Redis     │            │        │
+│       │           │  (Metadata)  │     │   (Cache)    │            │        │
+│       │           └──────────────┘     └──────────────┘            │        │
+│       │                                                             │        │
+│       └─────────────── HLS Streaming ◀──────────────────────────────┘        │
+│                                                                               │
+│  Transcoding Pipeline:                                                        │
+│  ┌────────┐   ┌────────┐   ┌────────┐   ┌────────┐   ┌────────┐            │
+│  │ Upload │──▶│ Decode │──▶│ Scale  │──▶│ Encode │──▶│  HLS   │            │
+│  │  MP4   │   │ FFmpeg │   │ 4 Res  │   │ H.264  │   │ .m3u8  │            │
+│  └────────┘   └────────┘   └────────┘   └────────┘   └────────┘            │
+│                                                                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="col-md-12">
+                            <h2>Key Features</h2>
+                        </div>
+                        <div class="col-md-6 animate-box">
+                            <div class="feature-card">
+                                <h4><i class="fas fa-video" style="color: #667eea;"></i> Adaptive Bitrate Streaming</h4>
+                                <p>HLS with multiple quality levels (1080p, 720p, 480p, 360p) that automatically adjusts based on network conditions for buffer-free playback.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box">
+                            <div class="feature-card">
+                                <h4><i class="fas fa-cogs" style="color: #667eea;"></i> FFmpeg Transcoding Pipeline</h4>
+                                <p>Automated video processing with FFmpeg for format conversion, resolution scaling, and HLS segmentation with optimized encoding settings.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box">
+                            <div class="feature-card">
+                                <h4><i class="fas fa-server" style="color: #667eea;"></i> Microservices Architecture</h4>
+                                <p>Separate API Gateway and Media Service for scalability. Each service is containerized with Docker and orchestrated via Docker Compose.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box">
+                            <div class="feature-card">
+                                <h4><i class="fas fa-user-shield" style="color: #667eea;"></i> JWT Authentication</h4>
+                                <p>Secure user authentication with JWT tokens, bcrypt password hashing, and role-based access control for content management.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box">
+                            <div class="feature-card">
+                                <h4><i class="fas fa-database" style="color: #667eea;"></i> Content Management</h4>
+                                <p>PostgreSQL database for content metadata, user profiles, watchlists, and viewing history with Redis caching for performance.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box">
+                            <div class="feature-card">
+                                <h4><i class="fas fa-cloud" style="color: #667eea;"></i> Object Storage</h4>
+                                <p>MinIO S3-compatible storage for raw uploads and HLS segments, enabling easy migration to AWS S3 or other cloud providers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack -->
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="col-md-12 animate-box">
+                            <h2>Technology Stack</h2>
+                        </div>
+                        <div class="col-md-4 animate-box">
+                            <h4>Backend</h4>
+                            <ul style="line-height: 2;">
+                                <li><strong>Go 1.21</strong> - High-performance API</li>
+                                <li><strong>Fiber v2</strong> - Express-inspired framework</li>
+                                <li><strong>GORM</strong> - ORM for PostgreSQL</li>
+                                <li><strong>Viper</strong> - Configuration management</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 animate-box">
+                            <h4>Media Processing</h4>
+                            <ul style="line-height: 2;">
+                                <li><strong>FFmpeg</strong> - Video transcoding</li>
+                                <li><strong>HLS</strong> - Adaptive streaming</li>
+                                <li><strong>H.264/AAC</strong> - Video/audio codecs</li>
+                                <li><strong>Thumbnail generation</strong></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 animate-box">
+                            <h4>Infrastructure</h4>
+                            <ul style="line-height: 2;">
+                                <li><strong>Docker</strong> - Containerization</li>
+                                <li><strong>PostgreSQL</strong> - Metadata storage</li>
+                                <li><strong>Redis</strong> - Caching layer</li>
+                                <li><strong>MinIO</strong> - Object storage</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Code Sample -->
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="col-md-12 animate-box">
+                            <h2>Code Highlight: HLS Transcoding</h2>
+                            <div class="code-block">
+<pre><span class="comment">// Transcode video to multiple HLS quality levels</span>
+<span class="keyword">func</span> (t *FFmpegTranscoder) TranscodeToHLS(input, outputDir <span class="keyword">string</span>) <span class="keyword">error</span> {
+    resolutions := []Resolution{
+        {Name: <span class="string">"1080p"</span>, Width: 1920, Height: 1080, Bitrate: <span class="string">"5000k"</span>},
+        {Name: <span class="string">"720p"</span>,  Width: 1280, Height: 720,  Bitrate: <span class="string">"2500k"</span>},
+        {Name: <span class="string">"480p"</span>,  Width: 854,  Height: 480,  Bitrate: <span class="string">"1000k"</span>},
+        {Name: <span class="string">"360p"</span>,  Width: 640,  Height: 360,  Bitrate: <span class="string">"500k"</span>},
+    }
+
+    <span class="keyword">for</span> _, res := <span class="keyword">range</span> resolutions {
+        args := []<span class="keyword">string</span>{
+            <span class="string">"-i"</span>, input,
+            <span class="string">"-vf"</span>, fmt.Sprintf(<span class="string">"scale=%d:%d"</span>, res.Width, res.Height),
+            <span class="string">"-c:v"</span>, <span class="string">"libx264"</span>, <span class="string">"-b:v"</span>, res.Bitrate,
+            <span class="string">"-c:a"</span>, <span class="string">"aac"</span>, <span class="string">"-b:a"</span>, <span class="string">"128k"</span>,
+            <span class="string">"-hls_time"</span>, <span class="string">"4"</span>, <span class="string">"-hls_list_size"</span>, <span class="string">"0"</span>,
+            filepath.Join(outputDir, res.Name, <span class="string">"playlist.m3u8"</span>),
+        }
+        exec.Command(<span class="string">"ffmpeg"</span>, args...).Run()
+    }
+    <span class="keyword">return</span> t.generateMasterPlaylist(outputDir, resolutions)
+}</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="row" style="margin-top: 50px;">
+                        <div class="col-md-12 animate-box">
+                            <h2>Results & Impact</h2>
+                            <ul style="font-size: 16px; line-height: 2.2;">
+                                <li><strong>Sub-second startup time</strong> - HLS segments load instantly for immediate playback</li>
+                                <li><strong>80+ media objects</strong> - Generated from 8 source videos across 4 quality levels</li>
+                                <li><strong>Adaptive quality</strong> - Seamless bitrate switching based on network conditions</li>
+                                <li><strong>Production-ready</strong> - Full authentication, authorization, and error handling</li>
+                                <li><strong>Scalable architecture</strong> - Microservices can be independently scaled</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="row" style="margin-top: 60px;">
+                        <div class="col-md-12 text-center animate-box">
+                            <a href="https://github.com/ExpertVagabond" target="_blank" class="btn btn-primary" style="margin-right: 10px;">View on GitHub</a>
+                            <a href="index.html#fh5co-work" class="btn btn-default">Back to Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="fh5co-footer" role="contentinfo" style="background: #1a1a2e; color: #fff; padding: 40px 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>&copy; 2025 Matthew Karsten. All Rights Reserved.</p>
+                            <ul class="fh5co-social-icons" style="margin-top: 20px;">
+                                <li><a href="https://github.com/ExpertVagabond" target="_blank" style="color: #fff;"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://twitter.com/expertvagabond" target="_blank" style="color: #fff;"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/matthewkarsten" target="_blank" style="color: #fff;"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
