@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>404 - Page Not Found | Matthew Karsten</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .error-page {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                color: #fff;
+            }
+            .error-code {
+                font-size: 120px;
+                font-weight: 700;
+                background: linear-gradient(135deg, #00d9ff, #9945ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 20px;
+            }
+            .error-message {
+                font-size: 24px;
+                margin-bottom: 30px;
+                color: #ccc;
+            }
+            .btn-home {
+                background: linear-gradient(135deg, #00d9ff, #9945ff);
+                border: none;
+                padding: 15px 40px;
+                font-size: 16px;
+                border-radius: 30px;
+                color: #fff;
+                text-decoration: none;
+                transition: transform 0.3s;
+            }
+            .btn-home:hover {
+                transform: scale(1.05);
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="error-page">
+            <div>
+                <div class="error-code">404</div>
+                <p class="error-message">Oops! This page doesn't exist.</p>
+                <p style="color: #888; margin-bottom: 30px;">The page you're looking for may have been moved or deleted.</p>
+                <a href="index.html" class="btn-home">Back to Home</a>
+            </div>
+        </div>
+    </body>
+</html>
